@@ -1,6 +1,6 @@
 #  MapReduce参考资料 
 
-------
+-----
 mapreduce中wordcount详细介绍（包括hadoop1和hadoop2版本） 
 http://my.oschina.net/mkh/blog/225957 
 
@@ -95,6 +95,14 @@ http://www.rigongyizu.com/hadoop-one-map-process-one-directory/
 mapreduce job让一个文件只由一个map来处理
 http://www.rigongyizu.com/mapreduce-job-one-map-process-one-file/
 
+使用python开发hadoop streaming程序及hadoop python网页抓取例子
+http://www.rigongyizu.com/python-hadoop-streaming-crawler/
+
+[译]下一代的Hadoop Mapreduce – 如何编写YARN应用程序
+http://www.rigongyizu.com/hadoop-mapreduce-next-generation-writing-yarn-applications/
+
+hadoop 2.0 yarn应用程序的执行流程和开发
+http://www.rigongyizu.com/how-to-write-hadoop-0-23-yarn-mapreduce-and-other-applications/
 
 MapReduce的自制Writable分组输出及组内排序
 http://computerdragon.blog.51cto.com/6235984/1287721
@@ -103,3 +111,38 @@ http://computerdragon.blog.51cto.com/6235984/1287721
 MapReduce高级编程之本地聚集与Combinner
 http://irwenqiang.iteye.com/blog/1453740
 
+
+
+Hadoop MapReduce 学习笔记(八) MapReduce实现类似SQL的order by/排序
+http://guoyunsky.iteye.com/blog/1235945
+
+
+MapReduce，组合式，迭代式，链式
+http://www.cnblogs.com/liqizhou/archive/2012/05/14/2499653.html
+
+MapReduce操作HBase
+http://www.cnblogs.com/liqizhou/archive/2012/05/17/2504279.html
+
+Hadoop,MapReduce操作Mysql
+http://www.cnblogs.com/liqizhou/archive/2012/05/16/2503458.html
+
+mapreduce的二次排序 SecondarySort
+http://www.cnblogs.com/xuxm2007/archive/2011/09/03/2165805.html
+
+MapReduce 算法 —— 二级排序
+http://www.oschina.net/translate/mapreduce-algorithms-secondary-sorting?print
+
+
+Hadoop专业解决方案-第3章：MapReduce处理数据
+http://www.cnblogs.com/hadoopdev/p/3744973.html
+
+基于MapReduce的配置型日志分析组件
+http://blog.csdn.net/cenwenchu79/article/details/5183178
+
+Beatles小记－分布式数据流分析框架（一）
+http://blog.csdn.net/cenwenchu79/article/details/7050281
+
+HADOOP 处理 NGINX 日志样例
+http://lancefox.iteye.com/blog/1808102
+
+https://github.com/bbejeck/hadoop-algorithms
