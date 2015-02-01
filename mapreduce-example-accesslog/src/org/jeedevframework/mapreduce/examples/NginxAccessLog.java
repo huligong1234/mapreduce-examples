@@ -61,7 +61,7 @@ public class NginxAccessLog {
 			String line = value.toString();
 			
 			//正则表达式，处理nginx access_log行数据，提取所需数据
-			String regex = "^(?<ip>\\d{1,3}.\\d{1,3}.\\d{1,3}.\\d{1,3})\\s-\\s(.*)\\s\\[(?<date>.*)\\]\\s\"(?<method>POST|GET)\\s(?<request>.*)\"\\s(?<status>\\d{3,})\\s(?<time>\\d+)\\s\"(.*)$";//
+			String regex = "^(?<ip>\\d{1,3}.\\d{1,3}.\\d{1,3}.\\d{1,3})\\s-\\s(.*)\\s\\[(?<date>.*)\\]\\s\"(?<method>POST|GET)\\s(?<request>.*)\"\\s(?<status>\\d{3,})\\s(?<size>\\d+)\\s\"(.*)$";//
 			Pattern pattern = Pattern.compile(regex);
 			Matcher matcher = pattern.matcher(line);
 			if (matcher.find()) {
@@ -71,7 +71,7 @@ public class NginxAccessLog {
 				String request = matcher.group("request");
 				String url = request.split("\\s")[0];
 				String status = matcher.group("status");
-				String taketime = matcher.group("time");
+				String size = matcher.group("size");
 
 				
 				//不统计‘/api/test.do’ 地址访问请求情况
@@ -90,7 +90,7 @@ public class NginxAccessLog {
 					time = dateString;
 				}
 
-				//String info = time + "|" + ip + "|" + requestMethod + "|" + url + "|" + status + "|" + taketime;
+				//String info = time + "|" + ip + "|" + requestMethod + "|" + url + "|" + status + "|" + size;
 				//System.out.println(info);
 
 				// key --> 2014-12-21 00:00:00|039.182.130.055|/api/abc.do
